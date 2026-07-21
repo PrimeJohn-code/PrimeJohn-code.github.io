@@ -3,92 +3,96 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Prime John — a warm, trustworthy professional profile.">
-  <title>Portfolio // Prime John</title>
+  <meta name="description" content="Prime John — On-device AI engineering and productization experience across multiple form factors.">
+  <meta name="theme-color" content="#100c0b">
+  <meta property="og:title" content="Prime John // On-device AI Engineer">
+  <meta property="og:description" content="Turning ambitious ideas into dependable products.">
+  <meta property="og:type" content="profile">
+  <meta property="og:url" content="https://primejohn-code.github.io/">
+  <link rel="canonical" href="https://primejohn-code.github.io/">
+  <title>Prime John // On-device AI Engineer</title>
   <link rel="stylesheet" href="styles.css">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Prime John","jobTitle":"On-device AI Engineer","url":"https://primejohn-code.github.io/","description":"On-device AI engineering and productization experience."}</script>
   <script src="script.js" defer></script>
   <script src="game.js" defer></script>
 </head>
 <body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
   <header class="site-header">
-    <a class="brand" href="#top" aria-label="Go to homepage">PRIMEJOHN<span>_</span></a>
+    <a class="brand" href="#top" aria-label="Prime John home">PRIMEJOHN<span>_</span></a>
     <nav aria-label="Primary navigation">
-      <a href="#about">About</a>
-      <a href="#work">Work</a>
-      <a href="#projects">Projects</a>
-      <a href="#games">Games</a>
-      <a href="#contact">Contact</a>
+      <a href="#about" data-nav="about" data-i18n="nav.about">About</a>
+      <a href="#projects" data-nav="projects" data-i18n="nav.projects">Projects</a>
+      <a href="#games" data-nav="games" data-i18n="nav.games">Games</a>
+      <a href="#contact" data-nav="contact" data-i18n="nav.contact">Contact</a>
     </nav>
+    <label class="language-picker"><span class="sr-only">Language</span><select id="language-select" aria-label="Language"><option value="en">EN</option><option value="ko">한국어</option><option value="zh">中文</option><option value="ja">日本語</option><option value="es">ES</option><option value="fr">FR</option><option value="de">DE</option><option value="it">IT</option><option value="pt">PT</option><option value="nl">NL</option></select></label>
   </header>
 
-  <main id="top">
-    <section class="hero" aria-labelledby="hero-title">
-      <p class="eyebrow">// SYSTEM ONLINE</p>
-      <h1 id="hero-title">Building digital<br><span>worlds with intent.</span></h1>
-      <p class="hero-copy">Prime John</p>
+  <main id="main-content">
+    <section id="top" class="hero" aria-labelledby="hero-title">
+      <p class="eyebrow">// ON-DEVICE AI / PRODUCTIZATION</p>
+      <h1 id="hero-title">Prime John<br><span>builds ideas that endure.</span></h1>
+      <p class="hero-copy" data-i18n="hero.value">Those who dream, wear their dreams into reality.</p>
+      <div class="hero-actions"><a class="button button-primary" href="#projects" data-i18n="cta.case">Explore the case study</a><a class="button" href="#contact" data-i18n="cta.inquiry">Start an inquiry</a></div>
     </section>
 
     <section id="about" class="content-section" aria-labelledby="about-title">
       <p class="eyebrow">01 // PROFILE</p>
-      <h2 id="about-title">About</h2>
-      <p>Prime John is a professional profile focused on thoughtful, dependable digital experiences.</p>
+      <h2 id="about-title" data-i18n="section.about">About</h2>
+      <p>Prime John is an On-device AI Engineer with productization experience, helping ambitious ideas become dependable products.</p>
       <div class="info-grid">
-        <article class="info-card"><span class="card-label">ROLE</span><strong>Prime John</strong></article>
-        <article class="info-card"><span class="card-label">FOCUS</span><strong>Reliable digital experiences</strong></article>
-        <article class="info-card"><span class="card-label">PROFILE</span><strong>Professional profile</strong></article>
+        <article class="info-card"><span class="card-label">ROLE</span><strong>On-device AI Engineer</strong><small>Productization experience</small></article>
+        <article class="info-card"><span class="card-label">POSITIONING</span><strong>From model to market</strong><small>Multiple product form factors</small></article>
+        <article class="info-card"><span class="card-label">RESUME</span><strong>PDF: N/A</strong><small>Available on request</small></article>
       </div>
     </section>
 
-    <section id="work" class="content-section" aria-labelledby="work-title">
-      <p class="eyebrow">02 // SELECTED WORK</p>
-      <h2 id="work-title">Work</h2>
-      <p>Career, technology stack, project details, and links: N/A</p>
-      <div class="status-line"><span class="status-dot"></span> Available for a clear next step.</div>
-    </section>
-
     <section id="projects" class="content-section" aria-labelledby="projects-title">
-      <p class="eyebrow">03 // PROJECTS</p>
-      <h2 id="projects-title">Projects</h2>
-      <p>Project names, descriptions, and links: N/A</p>
-      <div class="info-grid">
-        <article class="info-card"><span class="card-label">PROJECT 01</span><strong>N/A</strong></article>
-        <article class="info-card"><span class="card-label">EXPERIENCE</span><strong>N/A</strong></article>
-        <article class="info-card"><span class="card-label">RESEARCH</span><strong>N/A</strong></article>
+      <p class="eyebrow">02 // SELECTED CASE</p>
+      <h2 id="projects-title" data-i18n="section.projects">Projects</h2>
+      <article class="case-study">
+        <div class="case-heading"><p class="eyebrow">ON-DEVICE AI PRODUCTIZATION</p><h3>From intelligence to products people can use.</h3></div>
+        <div class="case-grid">
+          <div><span class="card-label">PROBLEM</span><p>Bring on-device intelligence from concept to dependable products across diverse form factors.</p></div>
+          <div><span class="card-label">APPROACH</span><p>Coordinate productization across engineering, product decisions, and market-ready execution.</p></div>
+          <div><span class="card-label">RESULT</span><p>Products across multiple form factors were sold in real markets and achieved leading global market share.</p></div>
+          <div><span class="card-label">ROLE</span><p>Manager — contribution scope and detailed project metrics: N/A.</p></div>
+        </div>
+      </article>
+      <div class="expertise-grid" aria-label="Expertise overview">
+        <article class="info-card"><span class="card-label">CORE EXPERTISE</span><strong>On-device AI</strong><small>Technical stack detail: N/A</small></article>
+        <article class="info-card"><span class="card-label">PRODUCT</span><strong>Productization</strong><small>Commercial execution across form factors</small></article>
+        <article class="info-card"><span class="card-label">COLLABORATION</span><strong>Manager</strong><small>Testimonials and partner history: N/A</small></article>
       </div>
     </section>
 
     <section id="games" class="content-section game-placeholder" aria-labelledby="games-title">
-      <p class="eyebrow">04 // PLAYGROUND</p>
-      <h2 id="games-title">Games</h2>
-      <p>A calm, readable playground with a moderate challenge and clearly visible enemies.</p>
+      <p class="eyebrow">03 // PLAYGROUND</p>
+      <h2 id="games-title" data-i18n="section.games">Games</h2>
+      <p>Snake is a calm, readable playground with a moderate challenge, clearly visible enemies, and optional cheerful sound effects.</p>
+      <div class="game-instructions"><strong>Before you start</strong><span>Eat the gold food to grow and score. Avoid the walls, your body, and red enemies.</span><span>Controls: Arrow keys or WASD · Space: pause · Touch buttons on mobile.</span></div>
       <div class="game-toolbar">
         <label>Speed <select id="speed-select"><option value="slow">Slow</option><option value="normal" selected>Normal</option><option value="fast">Fast</option></select></label>
         <label>Difficulty <select id="difficulty-select"><option value="easy">Low</option><option value="normal" selected>Medium</option><option value="hard">High</option></select></label>
-        <span>Score <strong id="score">0</strong></span>
-        <span>Best <strong id="high-score">0</strong></span>
+        <span>Score <strong id="score">0</strong></span><span>Best <strong id="high-score">0</strong></span>
+        <button id="sound-toggle" type="button" aria-pressed="true">Sound: on</button>
       </div>
       <div class="game-shell">
         <canvas id="game-canvas" tabindex="0" aria-label="Snake game board"></canvas>
         <p id="game-status" class="game-status" role="status">Press Start to play.</p>
+        <div id="game-over-panel" class="game-over-panel" hidden><strong>Game over</strong><span id="game-over-score">Score: 0</span><button id="game-over-restart" type="button">Play again</button></div>
       </div>
-      <div class="game-actions">
-        <button id="start-game" type="button">Start</button>
-        <button id="pause-game" type="button" disabled>Pause</button>
-        <button id="restart-game" type="button">Restart</button>
-      </div>
-      <div class="touch-controls" aria-label="Touch controls">
-        <button type="button" data-direction="up" aria-label="Move up">↑</button>
-        <div><button type="button" data-direction="left" aria-label="Move left">←</button><button type="button" data-direction="down" aria-label="Move down">↓</button><button type="button" data-direction="right" aria-label="Move right">→</button></div>
-      </div>
+      <div class="game-actions"><button id="start-game" class="button-primary" type="button">Start</button><button id="pause-game" type="button" disabled>Pause</button><button id="restart-game" type="button">Restart</button></div>
+      <div class="touch-controls" aria-label="Touch controls"><button type="button" data-direction="up" aria-label="Move up">↑</button><div><button type="button" data-direction="left" aria-label="Move left">←</button><button type="button" data-direction="down" aria-label="Move down">↓</button><button type="button" data-direction="right" aria-label="Move right">→</button></div></div>
     </section>
 
     <section id="contact" class="content-section" aria-labelledby="contact-title">
-      <p class="eyebrow">05 // CONTACT</p>
-      <h2 id="contact-title">Contact</h2>
-      <p>Public email and social links: N/A</p>
+      <p class="eyebrow">04 // CONTACT</p><h2 id="contact-title" data-i18n="section.contact">Contact</h2>
+      <p>For inquiries, please ask separately. Public email and social links: N/A.</p>
+      <a class="button button-primary" href="#contact">Request an introduction</a>
     </section>
   </main>
-
-  <footer><small>© Prime John · Static HTML / CSS / JavaScript</small></footer>
+  <footer><small>© Prime John · Static HTML / CSS / JavaScript · <a href="privacy.html">Privacy & accessibility</a></small></footer>
 </body>
 </html>
