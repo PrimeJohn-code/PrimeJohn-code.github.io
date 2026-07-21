@@ -7,6 +7,7 @@
   <title>Portfolio // Prime John</title>
   <link rel="stylesheet" href="styles.css">
   <script src="script.js" defer></script>
+  <script src="game.js" defer></script>
 </head>
 <body>
   <header class="site-header">
@@ -14,6 +15,7 @@
     <nav aria-label="Primary navigation">
       <a href="#about">About</a>
       <a href="#work">Work</a>
+      <a href="#projects">Projects</a>
       <a href="#games">Games</a>
       <a href="#contact">Contact</a>
     </nav>
@@ -44,15 +46,44 @@
       <div class="status-line"><span class="status-dot"></span> Available for a clear next step.</div>
     </section>
 
+    <section id="projects" class="content-section" aria-labelledby="projects-title">
+      <p class="eyebrow">03 // PROJECTS</p>
+      <h2 id="projects-title">Projects</h2>
+      <p>Project names, descriptions, and links: N/A</p>
+      <div class="info-grid">
+        <article class="info-card"><span class="card-label">PROJECT 01</span><strong>N/A</strong></article>
+        <article class="info-card"><span class="card-label">EXPERIENCE</span><strong>N/A</strong></article>
+        <article class="info-card"><span class="card-label">RESEARCH</span><strong>N/A</strong></article>
+      </div>
+    </section>
+
     <section id="games" class="content-section game-placeholder" aria-labelledby="games-title">
-      <p class="eyebrow">03 // PLAYGROUND</p>
+      <p class="eyebrow">04 // PLAYGROUND</p>
       <h2 id="games-title">Games</h2>
-      <p>A calm, readable playground with a moderate challenge and clearly visible enemies. The full snake game will be added in the next development loop.</p>
-      <div class="game-shell" aria-label="Snake game area ready for implementation">GAME AREA // READY</div>
+      <p>A calm, readable playground with a moderate challenge and clearly visible enemies.</p>
+      <div class="game-toolbar">
+        <label>Speed <select id="speed-select"><option value="slow">Slow</option><option value="normal" selected>Normal</option><option value="fast">Fast</option></select></label>
+        <label>Difficulty <select id="difficulty-select"><option value="easy">Low</option><option value="normal" selected>Medium</option><option value="hard">High</option></select></label>
+        <span>Score <strong id="score">0</strong></span>
+        <span>Best <strong id="high-score">0</strong></span>
+      </div>
+      <div class="game-shell">
+        <canvas id="game-canvas" tabindex="0" aria-label="Snake game board"></canvas>
+        <p id="game-status" class="game-status" role="status">Press Start to play.</p>
+      </div>
+      <div class="game-actions">
+        <button id="start-game" type="button">Start</button>
+        <button id="pause-game" type="button" disabled>Pause</button>
+        <button id="restart-game" type="button">Restart</button>
+      </div>
+      <div class="touch-controls" aria-label="Touch controls">
+        <button type="button" data-direction="up" aria-label="Move up">↑</button>
+        <div><button type="button" data-direction="left" aria-label="Move left">←</button><button type="button" data-direction="down" aria-label="Move down">↓</button><button type="button" data-direction="right" aria-label="Move right">→</button></div>
+      </div>
     </section>
 
     <section id="contact" class="content-section" aria-labelledby="contact-title">
-      <p class="eyebrow">04 // CONTACT</p>
+      <p class="eyebrow">05 // CONTACT</p>
       <h2 id="contact-title">Contact</h2>
       <p>Public email and social links: N/A</p>
     </section>
