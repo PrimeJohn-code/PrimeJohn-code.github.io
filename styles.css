@@ -1,0 +1,36 @@
+:root {
+  color-scheme: dark;
+  --bg: #050807;
+  --panel: #0b1210;
+  --text: #e5ffe9;
+  --muted: #8eaa95;
+  --accent: #43ff88;
+  --line: rgba(67, 255, 136, .25);
+  font-family: "Cascadia Mono", "Courier New", monospace;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; background: var(--bg); color: var(--text); line-height: 1.6; }
+body::before { content: ""; position: fixed; inset: 0; pointer-events: none; opacity: .08; background: repeating-linear-gradient(0deg, transparent 0 3px, var(--accent) 4px); }
+a { color: inherit; }
+.site-header { display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding: 1.25rem clamp(1rem, 4vw, 4rem); border-bottom: 1px solid var(--line); position: sticky; top: 0; background: rgba(5, 8, 7, .92); z-index: 1; }
+.brand { color: var(--accent); font-weight: 700; text-decoration: none; letter-spacing: .08em; }
+.brand span { animation: blink 1s steps(2, start) infinite; }
+nav { display: flex; flex-wrap: wrap; gap: clamp(.75rem, 3vw, 2rem); }
+nav a { color: var(--muted); text-decoration: none; }
+nav a:hover, nav a:focus-visible { color: var(--accent); }
+main { width: min(100% - 2rem, 1100px); margin: auto; }
+.hero { min-height: 72vh; display: grid; align-content: center; padding: 5rem 0; }
+.eyebrow { color: var(--accent); font-size: .8rem; letter-spacing: .14em; }
+h1, h2 { line-height: 1.1; margin: .5rem 0 1rem; }
+h1 { font-size: clamp(2.5rem, 8vw, 6.5rem); max-width: 900px; }
+h1 span { color: var(--accent); }
+h2 { font-size: clamp(1.75rem, 4vw, 3rem); }
+.hero-copy, .content-section p { color: var(--muted); max-width: 65ch; }
+.content-section { border-top: 1px solid var(--line); padding: 5rem 0; min-height: 35vh; }
+.game-shell { display: grid; place-items: center; min-height: 180px; margin-top: 2rem; border: 1px dashed var(--line); background: var(--panel); color: var(--accent); }
+footer { padding: 2rem 1rem; text-align: center; color: var(--muted); border-top: 1px solid var(--line); }
+@keyframes blink { 50% { opacity: 0; } }
+@media (max-width: 600px) { .site-header { align-items: flex-start; flex-direction: column; } .hero { min-height: 62vh; } }
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; scroll-behavior: auto !important; } }
